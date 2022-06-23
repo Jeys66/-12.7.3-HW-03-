@@ -1,11 +1,10 @@
 money=input('Введите сумму вклада:')
 money=float(money)
 per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
-t=per_cent['ТКБ']*money/100
+t=per_cent['ТКБ']*money/100 #Вычисление процентов
 c=per_cent['СКБ']*money/100
 v=per_cent['ВТБ']*money/100
 s=per_cent['СБЕР']*money/100
-deposit=[t,c,v,s]
+deposit=[t,c,v,s]           #Перевод результатов в список
 print('Накопленные средства:',deposit)
-max_per_cent=max(deposit)
-print('Наибольшее накопление:',max_per_cent )
+print('Наибольшее накопление:',max(deposit) )
